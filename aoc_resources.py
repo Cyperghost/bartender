@@ -16,6 +16,7 @@ class Resources(object):
         __init__    Constructor
         update      UPdate
     """
+
     keys = ['Food', 'Wood', 'Stone', 'Gold', 'Population Free Room', 'ConversionRange', 'CurrentAge', 'RelicsCaptured',
             'Unused (Trade Bonus)', 'Trade Goods', 'Unused (Trade Production)', 'Population', 'Corpse Decay Time',
             'Remarkable Discovery', 'MonumentsCaptured', 'MeatStorage', 'BerryStorage', 'FishStorage', 'Unused',
@@ -61,6 +62,7 @@ class Resources(object):
             'Feitoria Stone Productivity', 'Feitoria Gold Productivity', 'Reveal Enemy TC', 'Reveal Relics']
     fmt = "f" * len(keys)
 
+
     def __init__(self, owner):
         super(Resources, self).__init__()
         self.owner = owner
@@ -73,4 +75,5 @@ class Resources(object):
 
 
 if __name__ == '__main__':
+    import bartender
     pass
